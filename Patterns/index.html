@@ -1,0 +1,106 @@
+<DOCTYPE! HTML>
+<html> 
+	
+	<head>
+			<title>Pattern 1</title>
+			<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	
+	<header>
+			<h1>Pattern 1</h1>
+
+	</header>
+		
+<body>
+
+<script src='http://cykod.github.io/Logoish/logoish.js'></script>	
+	
+<script>
+	Logoish.init();
+	
+	speed(0);
+	
+moveTo(10,100)	
+
+	function clover(size){
+		lineColor("#0000FF")
+		angle(30)
+		forward(size)
+		rotate(120)
+		forward(size)
+		rotate(60)
+		forward(size)
+		rotate(120)
+		forward(size)
+	}
+	
+	function clover2(size){
+		lineColor("#FF0000")
+		angle(30)
+		forward(size)
+		rotate(120)
+		forward(size)
+		rotate(60)
+		forward(size)
+		rotate(120)
+		forward(size)
+	}
+	
+	
+	
+	for(var x=0; x<100; x++){
+		clover(x);
+		move(10,0)
+		
+	}	
+
+moveTo(10, 270)
+	
+	for(var x=0; x<100; x++){
+		clover(x);
+		move(10,0)
+		
+	}
+
+	
+moveTo(10, 440)
+	
+	for(var x=0; x<100; x++){
+		clover(x);
+		move(10,0)
+		
+	}
+	
+moveTo(10, 610)
+		
+	for(var x=0; x<100; x++){
+		clover(x);
+		move(10,0)
+		
+	}
+
+	moveTo(10, 185)
+	
+	for(var x=0; x<120; x++){
+		clover2(x);
+		move(10,0)
+	}
+
+	moveTo(10, 355)
+	
+	
+	for(var x=0; x<120; x++){
+		clover2(x);
+		move(10,0)
+	}
+
+moveTo(10, 525)
+	for(var x=0; x<120; x++){
+		clover2(x);
+		move(10,0)
+	}
+	
+
+</script>
+</body>
+</html>
