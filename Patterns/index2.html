@@ -1,0 +1,72 @@
+<DOCTYPE! HTML>
+<html> 
+	
+	<head>
+			<title>Pattern 2</title>
+			<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	
+	<header>
+			<h1>Pattern 2</h1>
+
+	</header>
+		
+<body>
+
+<script src='http://cykod.github.io/Logoish/logoish.js'></script>	
+	
+<script>
+	Logoish.init();
+	
+	speed(0);
+	
+	function triangle(size){
+		lineWidth(1.5)
+		lineColor("#99FF99")
+		forward(size)
+		rotate(120)
+		forward(size)
+		rotate(120)
+		forward(size)
+		rotate(120)
+	}
+	
+	function triangle2(size){
+		lineWidth(2.75)
+		lineColor("#7EDFFF")
+		forward(size)
+		rotate(120)
+		forward(size * 2)
+		rotate(120)
+		forward(size)
+		rotate(120)
+	}
+	
+	for(var x = 50; x < 600; x++) {
+	  moveTo(700,400);
+	  rotate(65);
+	  triangle2(x);
+  
+	}
+	
+	
+	
+	
+	for(var x = 50; x < 700; x++) {
+	  moveTo(700,400);
+	  rotate(50);
+	  triangle(x);
+
+  
+	}
+	
+
+hide()
+	
+
+
+					
+</script>
+
+</body>
+</html>
