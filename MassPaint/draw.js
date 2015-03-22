@@ -35,7 +35,7 @@ $("#button-eraser").on("click",function() {
 ///START STAMPS////
 
 $("#button-bubble").on("click", function(){
-	$(".tool.selected").removeClass("selected");
+	$(".tool").removeClass("selected");
 	$(this).addClass("selected");
 	tool = "bubble"
 	lineWidth(width);
@@ -193,7 +193,7 @@ function bubble(){
 
 
 $("#button-bubbleSmall").on("click", function(){
-	$(".tool.selected").removeClass("selected");
+	$(".tool").removeClass("selected");
 	$(this).addClass("selected");
 	tool = "bubbleSmall"
 	lineWidth(width);
@@ -289,7 +289,7 @@ function bubbleSmall(){
 
 
 $("#button-flower").on("click", function(){
-	$(".tool.selected").removeClass("selected");
+	$(".tool").removeClass("selected");
 	$(this).addClass("selected");
 	tool = "flower"
 	lineWidth(width);
@@ -854,7 +854,7 @@ function flower(){
 
 
 $("#button-flowerSmall").on("click", function(){
-	$(".tool.selected").removeClass("selected");
+	$(".tool").removeClass("selected");
 	$(this).addClass("selected");
 	tool = "flowerSmall"
 	lineWidth(width);
