@@ -1,0 +1,282 @@
+body, html { padding:0px; margin:0px; }
+
+
+.buttons {
+	position:relative;
+	z-index:2;
+	padding:15px;
+	float:left;
+}
+
+.buttons button {
+  font-size: 24px;
+  padding:6px;
+  background-color:white;
+  border: 1px solid black;
+
+}
+
+.buttons button.selected {
+
+  border: 3px solid #99FFCC;
+}
+
+
+.buttons .color {
+	width: 30px;
+	height: 30px;
+}
+
+
+h1 {
+	font-size:15px;
+	font-family: sans-serif;
+	padding: 3px;
+	border-bottom:2px solid #99FFCC;
+
+}
+
+#saveReplay {
+	width:16%;
+	margin:3px;
+
+}
+
+#penEraser {
+	width:16%;
+	margin:3px;
+}
+
+#button-save {
+	width:40px;
+	height:40px;
+	margin:3px;
+	background-color:white;
+}
+
+#button-replay {
+	width:40px;
+	height:40px;
+	margin:3px;
+	background-color:white;
+}
+
+#button-pen {
+	width:40px;
+	height:40px;
+	margin:3px;
+	background-color:white;
+}
+
+#button-eraser {
+	width:40px;
+	height:40px;
+	margin:3px;
+	background-color:white;
+}
+
+
+
+
+#stamp {
+	width:16%;
+	margin:5px;
+	margin:3px;
+	position:relative;
+
+}
+
+
+#stamp #button-bubble {
+	width:40px;
+	height:40px;
+	margin:3px;
+	background-color:white;
+}
+
+#stamp #button-bubbleSmall {
+	width:40px;
+	height:40px;
+	margin:3px;
+	background-color:white;
+}
+
+#stamp #button-flowerSmall {
+	width:40px;
+	height:40px;
+	margin:3px;
+	background-color:white;
+}
+
+#stamp #button-flower{
+	width:40px;
+	height:40px;
+	margin:3px;
+	background-color:white;
+}
+
+
+#swatches {
+	width:18%;
+}
+
+#swatches .color {
+	width:20px;
+	height:20px;
+	margin:3px;
+
+}
+
+
+#button-black {
+	background-color:black;
+}
+
+#button-brightBlue {
+	background-color:#33CCFF;
+}
+
+#button-medBlue {
+	background-color:#99CCFF;
+}
+
+#button-darkBlue {
+	background-color:#0093B8;
+}
+
+#button-oceanBlue {
+	background-color:#CCFFFF;
+}
+
+#button-trueBlue {
+	background-color:#0099FF;
+}
+
+#button-orange {
+	background-color:#FFB42F;
+}
+
+#button-darkOrange {
+	background-color:#CC5600;
+}
+
+#button-green {
+	background-color:#0AF54B;
+}
+
+#button-darkGreen {
+	background-color:#4A8C00;
+}
+
+#button-yellow {
+	background-color:#F3EF00;
+}
+
+#button-darkYellow {
+	background-color:#CBC700;
+}
+
+#button-spongeYellow {
+	background-color:#FFFF00;
+}
+
+#button-brown {
+	background-color:#996600;
+}
+
+#button-red {
+	background-color:#E62E00;
+}
+
+#button-purple {
+	background-color:#CC00CC;
+}
+
+#button-pink {
+	background-color:#FF92EB;
+}
+
+#button-sand {
+	background-color:#FFFFCC;
+}
+
+
+#button-greyGreen {
+	background-color:#006666;
+}
+
+#button-seaweed {
+	background-color:#849822;
+}
+
+#button-sandDark {
+	background-color:#E6E6B8;
+}
+
+#button-white {
+	background-color:white;
+}
+
+#button-gray {
+	background-color:#B3BAB3;
+}
+
+#button-lightGray {
+	background-color:#DEE1DE;
+}
+
+
+#lineWeight {
+	width:20%;
+}
+
+
+
+#button-lineLight {
+	width: 5px;
+	height:1px;
+	background-color:black;
+}
+
+#button-lineReg {
+	width:10px;
+	height:20px;
+	background-color:black;
+}
+
+#button-lineMed {
+	width:10px;
+	height:30px;
+	background-color:black;
+}
+
+#button-lineBold {
+	width:10px;
+	height:40px;
+	background-color:black;
+
+}
+
+#button-lineBlack {
+	width:10px;
+	height:50px;
+	background-color:black;
+}
+
+#button-lineUltra {
+	width:10px;
+	height:60px;
+	background-color:black;
+}
+
+#button-lineSuper {
+	width:10px;
+	height:70px;
+	background-color:black;
+}
+
+
+
+
+
+
