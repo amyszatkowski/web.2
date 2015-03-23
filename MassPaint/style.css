@@ -1,11 +1,15 @@
 body, html { padding:0px; margin:0px; }
 
+#page {
+	position:relative;
+}
 
 .buttons {
 	position:relative;
 	z-index:2;
 	padding:15px;
 	float:left;
+	width:150px;
 }
 
 .buttons button {
@@ -37,13 +41,13 @@ h1 {
 }
 
 #saveReplay {
-	width:16%;
+
 	margin:3px;
 
 }
 
 #penEraser {
-	width:16%;
+
 	margin:3px;
 }
 
@@ -79,7 +83,7 @@ h1 {
 
 
 #stamp {
-	width:16%;
+
 	margin:5px;
 	margin:3px;
 	position:relative;
@@ -117,7 +121,7 @@ h1 {
 
 
 #swatches {
-	width:18%;
+
 }
 
 #swatches .color {
@@ -227,7 +231,7 @@ h1 {
 
 
 #lineWeight {
-	width:20%;
+
 }
 
 
@@ -273,6 +277,11 @@ h1 {
 	width:10px;
 	height:70px;
 	background-color:black;
+}
+
+#patrick {
+	position:absolute;
+	float:right;
 }
 
 
