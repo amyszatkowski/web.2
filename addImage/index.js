@@ -4,7 +4,7 @@ function addImage(image, link, likes, caption){
 
 	var $image = $("<img>").attr("src", image);
 
-	var $link = $("<h4>").text(link);
+	var $link = $("<a>").attr("href", link);
 
 	var $likes =$("<h5>").text(likes);
 
