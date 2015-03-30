@@ -10,7 +10,9 @@ function addImage(image, link, likes, caption){
 
 	var $caption = $("<h3>").text(caption);
 
-	$div.append($image).append($link).append($likes).append($caption);
+	$link.append($image);
+
+        $div.append($link).append($likes).append($caption);
 
 	$("#container").append($div);
 
