@@ -102,7 +102,7 @@ table {
 
 #imageTopLeft {
 	position:absolute;
-	width:50%;
+	width:36.15%;
 	top:-0.5%;
 	left:13%;
 	opacity:0;
@@ -115,9 +115,9 @@ table {
 
 #imageTopRight {
 	position:absolute;
-	width:50%;
+	width:36.6%;
 	top:0.5%;
-	left:50%;
+	left:13.5%;
 	opacity:0;
 	transition: opacity 2s ease;
 }
