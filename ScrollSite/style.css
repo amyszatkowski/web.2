@@ -344,6 +344,13 @@ table {
 	
 }
 
+#endCredit {
+	font-family: 'PT Serif', serif;
+	line-height: 1.5em;
+	text-transform:italic;
+	font-size:12px;
+}
+
 
 h2  {
 	font-family: 'Open Sans', sans-serif;
