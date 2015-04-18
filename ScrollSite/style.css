@@ -1,0 +1,342 @@
+/* Meyer Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* END RESET */
+
+
+
+#container {
+	margin:0px auto;
+	width:100%;
+	background-color:white;
+}
+
+.menu a {
+	width:15px;
+	height:15px;
+	border-radius:50%;
+	background-color:black;
+}
+
+#top {
+	margin: 0px auto;
+	width:100%;
+	position:relative;
+}
+
+#imageTop{
+	width:100%;
+}
+
+#imageTopLeft {
+	position:absolute;
+	top:-1.3%;
+	left:13%;
+	opacity:0;
+	transition: opacity 2s ease;
+}
+
+#imageTopLeft:hover {
+	opacity:1;
+}
+
+#imageTopRight {
+	position:absolute;
+	top:-1.3%;
+	left:50%;
+	opacity:0;
+	transition: opacity 2s ease;
+}
+
+#imageTopRight:hover {
+	opacity:1;
+}
+
+
+#title {
+	font-family: 'Cutive', serif;
+	font-weight:400;
+	font-size:65px;
+	text-transform:uppercase;
+	color:#3ea1a1;
+	position:absolute;
+	left:3%;
+	top:450px;
+
+}
+
+#credit {
+	position:absolute;
+	right:3%;
+	top:650px;
+}
+
+
+#leadIn {
+	font-size:30px;
+	line-height:1.6em;
+	color:#3ea1a1;	
+}
+
+
+.section {
+	position:relative;
+}
+
+#imageLeft {
+	position:absolute;
+	width:45%;
+	left:-50%;
+	opacity:0;
+
+}
+
+#imageLeft.on-page {
+	opacity: 1;
+	transition: opacity 4s ease;
+}
+
+#imageRight{
+	position:absolute;
+	width:45%;
+	right:-50%;
+	opacity:0;
+}
+
+
+#imageRight.on-page {
+	opacity: 1;
+	transition: opacity 4s ease;
+}
+
+#imageLeft2 {
+	position:absolute;
+	width:45%;
+	left:-50%;
+	opacity:0;
+
+}
+
+#imageLeft2.on-page {
+	opacity: 1;
+	transition: opacity 4s ease;
+}
+
+#imageRight2 {
+	position:absolute;
+	width:45%;
+	right:-50%;
+	opacity:0;
+}
+
+
+#imageRight2.on-page {
+	opacity: 1;
+	transition: opacity 4s ease;
+}
+
+#imageLeft3 {
+	position:absolute;
+	width:45%;
+	left:-50%;
+	opacity:0;
+
+}
+
+#imageLeft3.on-page {
+	opacity: 1;
+	transition: opacity 4s ease;
+}
+
+#imageRight3 {
+	position:absolute;
+	width:45%;
+	right:-50%;
+	opacity:0;
+}
+
+
+#imageRight3.on-page {
+	opacity: 1;
+	transition: opacity 4s ease;
+}
+
+#imageLeft4 {
+	position:absolute;
+	width:45%;
+	left:-50%;
+	opacity:0;
+
+}
+
+#imageLeft4.on-page {
+	opacity: 1;
+	transition: opacity 4s ease;
+}
+
+#imageRight4 {
+	position:absolute;
+	width:45%;
+	right:-50%;
+	opacity:0;
+}
+
+
+#imageRight4.on-page {
+	opacity: 1;
+	transition: opacity 4s ease;
+}
+
+#imageLeft5 {
+	position:absolute;
+	width:45%;
+	left:-50%;
+	opacity:0;
+
+}
+
+#imageLeft5.on-page {
+	opacity: 1;
+	transition: opacity 4s ease;
+}
+
+#imageRight5 {
+	position:absolute;
+	width:45%;
+	right:-50%;
+	opacity:0;
+}
+
+
+#imageRight5.on-page {
+	opacity: 1;
+	transition: opacity 4s ease;
+}
+
+#imageLeft6 {
+	position:absolute;
+	width:45%;
+	left:-50%;
+	opacity:0;
+
+}
+
+#imageLeft6.on-page {
+	opacity: 1;
+	transition: opacity 4s ease;
+}
+
+#imageRight6 {
+	position:absolute;
+	width:45%;
+	right:-50%;
+	opacity:0;
+}
+
+
+#imageRight6.on-page {
+	opacity: 1;
+	transition: opacity 4s ease;
+}
+
+
+
+#textBlock {
+	margin:0px auto;
+	width:50%;
+	background-color:white;
+	padding-left:5%;
+	padding-right:5%;
+
+}
+
+.marta {
+	top:43%;
+}
+
+.mirror {
+	top:64%;
+}
+
+.curly {
+	top:20%;
+}
+
+
+.mainText {
+	font-family: 'PT Serif', serif;
+	line-height: 1.75em;
+	
+}
+
+
+h2  {
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+	font-size:15px;
+	line-height:1.75em;
+	text-transform:uppercase;
+	color:#3ea1a1;
+
+}
+
+h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size:20px;
+	color:#3ea1a1;
+	padding-top:3%;
+	padding-bottom:1%;
+	text-transform:uppercase;
+	text-align:center;
+}
+
+
