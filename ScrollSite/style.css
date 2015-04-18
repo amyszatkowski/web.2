@@ -76,6 +76,7 @@ table {
 
 .menu {
 	position:fixed;
+	z-index:20;
 }
 
 .menu a {
@@ -130,7 +131,7 @@ table {
 #title {
 	font-family: 'Cutive', serif;
 	font-weight:400;
-	font-size:65px;
+	font-size:55px;
 	text-transform:uppercase;
 	color:#3ea1a1;
 	position:absolute;
