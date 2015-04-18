@@ -51,5 +51,11 @@ $("#imageLeft6").on("arrived",function(e){
 	});
 
 
+$("#top").on("arrived", function(e){
+$(".li").removeClass("selected");
+$(this).addClass("selected");
+})
+
+
 
 
