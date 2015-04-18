@@ -59,17 +59,41 @@ table {
 	background-color:white;
 }
 
-.menu a {
-	width:15px;
-	height:15px;
-	border-radius:50%;
-	background-color:black;
-}
+
 
 #top {
 	margin: 0px auto;
 	width:100%;
 	position:relative;
+}
+
+#nav {
+	position:absolute;
+	top:25%;
+	right:2%;
+
+}
+
+.menu {
+	position:fixed;
+}
+
+.menu a {
+	display:block;
+	width:15px;
+	height:15px;
+	border-radius:50%;
+	background-color:#B2D9D9;
+	transition: background-color 500ms ease;
+
+}
+
+.menu li {
+	margin-top:100%;
+}
+
+.selected {
+	background-color:#1F5050;
 }
 
 #imageTop{
