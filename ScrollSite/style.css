@@ -93,8 +93,8 @@ table {
 	margin-top:100%;
 }
 
-.selected {
-	background-color:#1F5050;
+.menu a.selected {
+	background-color: #1F5050;
 }
 
 #imageTop{
