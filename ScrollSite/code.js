@@ -52,11 +52,32 @@ $("#imageLeft6").on("arrived",function(e){
 	$(this).addClass("on-page");
 	});
 
+$("#twinStory1").on("arrived",function(e){
+	$(this).addClass("on-page");
+	});
 
-$("#top").on("arrived", function(e){
-$(".li").removeClass("selected");
-$(this).addClass("selected");
-})
+$("#twinStory2").on("arrived",function(e){
+	$(this).addClass("on-page");
+	});
+
+$("#twinStory3").on("arrived",function(e){
+	$(this).addClass("on-page");
+	});
+
+$("#twinStory4").on("arrived",function(e){
+	$(this).addClass("on-page");
+	});
+
+$("#twinStory5").on("arrived",function(e){
+	$(this).addClass("on-page");
+	});
+
+$("#twinStory6").on("arrived",function(e){
+	$(this).addClass("on-page");
+	});
+
+
+
 
 
 ///Dot Menu ////

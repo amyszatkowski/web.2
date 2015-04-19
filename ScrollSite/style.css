@@ -128,6 +128,7 @@ table {
 }
 
 
+
 #title {
 	font-family: 'Cutive', serif;
 	font-weight:400;
@@ -153,6 +154,126 @@ table {
 	color:#3ea1a1;	
 }
 
+
+#twinStory1 {
+	background-color:rgba(62, 161, 161, 0.6);
+	color:white;
+	position:absolute;
+	width:39%;
+	left:-50%;
+	top:68%;
+	padding:3%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+	font-size:11px;
+	line-height:2em;
+	opacity:0;
+}
+
+#twinStory1.on-page {
+	opacity:1;
+	transition: opacity 4s ease;
+}
+
+#twinStory2 {
+	background-color:rgba(62, 161, 161, 0.6);
+	color:white;
+	position:absolute;
+	width:39%;
+	right:-50%;
+	top:51%;
+	padding:3%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+	font-size:11px;
+	line-height:2em;
+	opacity:0;
+}
+
+#twinStory2.on-page {
+	opacity:1;
+	transition: opacity 4s ease;
+}
+
+#twinStory3 {
+	background-color:rgba(62, 161, 161, 0.6);
+	color:white;
+	position:absolute;
+	width:39%;
+	left:-50%;
+	top:29.5%;
+	padding:3%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+	font-size:11px;
+	line-height:2em;
+	opacity:0;
+}
+
+#twinStory3.on-page {
+	opacity:1;
+	transition: opacity 4s ease;
+}
+
+#twinStory4 {
+	background-color:rgba(62, 161, 161, 0.6);
+	color:white;
+	position:absolute;
+	width:39%;
+	right:-50%;
+	top:25%;
+	padding:3%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+	font-size:11px;
+	line-height:2em;
+	opacity:0;
+}
+
+#twinStory4.on-page {
+	opacity:1;
+	transition: opacity 4s ease;
+}
+
+#twinStory5 {
+	background-color:rgba(62, 161, 161, 0.6);
+	color:white;
+	position:absolute;
+	width:39%;
+	left:-50%;
+	top:31%;
+	padding:3%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+	font-size:11px;
+	line-height:2em;
+	opacity:0;
+}
+
+#twinStory5.on-page {
+	opacity:1;
+	transition: opacity 4s ease;
+}
+
+#twinStory6 {
+	background-color:rgba(62, 161, 161, 0.6);
+	color:white;
+	position:absolute;
+	width:39%;
+	right:-50%;
+	top:37%;
+	padding:3%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+	font-size:11px;
+	line-height:2em;
+	opacity:0;
+}
+
+#twinStory6.on-page {
+	opacity:1;
+	transition: opacity 4s ease;
+}
 
 .section {
 	position:relative;
