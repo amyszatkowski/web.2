@@ -349,6 +349,7 @@ table {
 	line-height: 1.65em;
 	text-transform:italic;
 	font-size:12px;
+	padding-bottom:10%;
 }
 
 
@@ -372,5 +373,7 @@ h3 {
 	text-transform:uppercase;
 	text-align:center;
 }
+
+
 
 
