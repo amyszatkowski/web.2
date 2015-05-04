@@ -7,24 +7,53 @@
   <script src='http://cykod.github.io/Collection.js/packery.pkgd.min.js'></script>
   <script src='http://cykod.github.io/Collection.js/tabletop.js'></script>
   <script src='http://cykod.github.io/Collection.js/collection.js'></script>
-
+  <script src="imagesloaded.pkgd.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
 </head>
 <body>
 
+<div id='logoContainer'> 
+  <img src="Porcelain.png" id='logo'> 
+</div>
+
+
 <div id='filter-bar-wrapper'>
   <div id='filter-bar'>
+    
+
+  <h5>Filter</h5>
+  <h6>Series</h6>
+
+    
+    <button data-category="blossom"   class='category'>Blossom</button>
+    <button data-category="dotted"    class='category'>Dotted</button>
+    <button data-category="hexagon"   class='category'>Hexagon</button>
+
+    <button data-category=""          class='category selected' id="all-button">See All</button>
+
+  <h6>Season</h6>
+    
+    <button data-season="Spring 2013" class='season'>Spring 2013</button>
+    <button data-season="Spring 2014" class='season'>Spring 2014</button>
+    <button data-season="Fall 2014" class='season'>Fall 2014</button>
+
+    <button data-season="" class='season selected' id="all-button">See All</button>
+
     <input type='text' id='search' placeholder='search'/>
-    <button data-category=""      class='category selected' id="all-button">All</button>
-    <button data-category="blue"  class='category'>Blue</button>
-    <button data-category="red"   class='category'>Red</button>
+
   </div>
 </div>
+
+<div id='collectionWrapper'>
 
 <ul class='collection'>
  
 
 
 </ul>
+
+</div>
 
 <div class='overlay'></div>
 <div class='modal'></div>
@@ -35,8 +64,8 @@ function showModal(item) {
    $(".modal").empty();
    
    var $h1 = $("<h1>").text(item.Name);
-   var $img = $("<img>").attr("src",item.Image);
-   var $p = $("<p class='description'>").text(item.Year);
+   var $img = $("<img>").attr("src",item.PhotoFull);
+   var $p = $("<p class='description'>").html(item.Name + "<br>" + item.Season + "<br>" + item.Glaze + "<br>" + item.Series);
 
    $(".modal").append($h1,$img,$p);
    
@@ -51,14 +80,15 @@ function hideModal() {
 }
 
 function addItem(item) {
-  var $li = $("<div>").addClass("item").addClass(item.Glaze);
+  var $li = $("<div>").addClass("item").addClass(item.Description);
 
-  $li.attr("data-category",item.Color);
+  $li.attr("data-category",item.Series);
+  $li.attr("data-season",item.Season);
+  $li.attr("data-search", item.Series + " " + item.Season + " " + item.Name + " " + item.Glaze);
 
-  var $h2 = $("<h2 class='name'>").text(item.Name);
-  var $p = $("<p class='description'>").text(item.Year);
+  var $img = $("<img class='thumbnail'>").attr("src",item.Photo);
 
-  $li.append($h2).append($p);
+  $li.append($img);
 
   $li.on("click",function(e) {
       showModal(item);
@@ -79,15 +109,17 @@ function callback(data) {
   addItems(data);
 
   var $container = $('.collection');
+  $container.imagesLoaded( function() {
   $container.packery({
     itemSelector: '.item',
     gutter: 10
-  });
+  }); });
 
   var myCollection = $(".item").collection({
     filters: { 
-      "title": "h2",
-      "category": "[data-category]"
+      "title": "[data-search]",
+      "category": "[data-category]",
+      "season": "[data-season]"
     },
 
     update: function() { 
@@ -103,6 +135,13 @@ function callback(data) {
       $("#filter-bar button").removeClass("selected");
       $(this).addClass("selected");
       myCollection.filtered("category",category);
+  });
+
+  $(".season").on("click",function(e) {
+      var season = $(this).data("season");
+      $("#filter-bar button").removeClass("selected");
+      $(this).addClass("selected");
+      myCollection.filtered("season", season);
   });
 
   $("#search").on("change keyup",function(e) {
